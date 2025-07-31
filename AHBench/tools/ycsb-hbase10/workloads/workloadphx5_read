@@ -1,0 +1,20 @@
+# phoenix 5.x on hbase 2.x workload
+# single row select for table with index, single column index
+
+recordcount=24000000
+operationcount=1000000
+workload=com.yahoo.ycsb.workloads.IndexWorkload
+fieldcount=1
+fieldlength=24
+readallfields=true
+indexfieldcount=1
+indexfieldlength=24
+
+readproportion=1.0
+updateproportion=0
+scanproportion=0
+insertproportion=0
+batchproportion=0
+batchsize=0
+
+requestdistribution=uniform

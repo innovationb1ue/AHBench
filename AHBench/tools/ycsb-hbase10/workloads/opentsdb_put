@@ -1,0 +1,17 @@
+recordcount=2400000
+operationcount=1000000
+workload=com.yahoo.ycsb.workloads.TsdbWorkload
+fieldcount=1
+fieldlength=24
+readallfields=true
+indexfieldcount=1
+indexfieldlength=24
+
+readproportion=0
+updateproportion=0
+scanproportion=0
+insertproportion=1.0
+batchproportion=0
+batchsize=0
+
+requestdistribution=zipfian
