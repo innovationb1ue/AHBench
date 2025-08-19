@@ -79,7 +79,8 @@ if __name__ == '__main__':
     check_call('cp %s %s' % (hbase_xml_file, ycsb_conf), shell=True)
     check_call('echo log4j.rootLogger=INFO > %s/log4j.properties' % ycsb_conf, shell=True)
 
-    cmd = '%s %s hbase10 -P %s -threads %d -p table=%s -p columnfamily=f -p hdrhistogram.percentiles=25,50,75,90,95,' \
+    
+    cmd = '%s %s hbase2 -P %s -threads %d -p table=%s -p columnfamily=f -p hdrhistogram.percentiles=25,50,75,90,95,' \
           '99,99.9,99.99 -p exportfile=%s %s -s 2>&1 | tee %s ' % (
               util.UTIL_ENV['YCSB'], cmd_type, ycsb_workload_template_file, threads, table_name, result_output_file,
               ycsb_props_args, ycsb_log)

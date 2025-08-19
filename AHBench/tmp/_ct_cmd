@@ -1,0 +1,1 @@
+tname='ahbenchtest-read'; rs=200; cprs='SNAPPY'; kl=19; encode='DIFF'; create tname, {NAME => 'f', DATA_BLOCK_ENCODING => encode, COMPRESSION => cprs}, {SPLITS => (1..(rs-1)).map{|i| "user#{(i * ((2**63-1)/(rs-1))).to_s.rjust(kl, "0")}"} }

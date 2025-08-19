@@ -1,0 +1,1 @@
+tname="ahbenchtest-read"; sleept=5; disable tname; sleep(sleept); drop tname;
